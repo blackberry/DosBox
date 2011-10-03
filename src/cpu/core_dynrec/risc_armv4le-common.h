@@ -26,7 +26,7 @@
 // or aspects of the recompiling
 
 // protect FC_ADDR over function calls if necessaray
-// #define DRC_PROTECT_ADDR_REG
+#define DRC_PROTECT_ADDR_REG
 
 // try to use non-flags generating functions if possible
 #define DRC_FLAGS_INVALIDATION
@@ -87,9 +87,18 @@ typedef Bit8u HostReg;
 #define HOST_lr HOST_r14
 #define HOST_pc HOST_r15
 
+#include <sys/mman.h>
+
+void jnicholl_cacheFlush(void* code, size_t size)
+{
+	msync(code, size, MS_INVALIDATE_ICACHE);
+}
 
 static void cache_block_closing(Bit8u* block_start,Bitu block_size) {
-#if (__ARM_EABI__)
+	//fprintf(stderr, "%s\n", __FUNCTION__);
+#ifdef __PLAYBOOK__
+	msync(block_start, block_size, MS_INVALIDATE_ICACHE);
+#elif (__ARM_EABI__)
 	//flush cache - eabi
 	register unsigned long _beg __asm ("a1") = (unsigned long)(block_start);				// block start
 	register unsigned long _end __asm ("a2") = (unsigned long)(block_start+block_size);		// block end
@@ -111,4 +120,5 @@ static void cache_block_closing(Bit8u* block_start,Bitu block_size) {
 		);
 // GP2X END
 #endif
+	//fprintf(stderr, "%s end\n", __FUNCTION__);
 }

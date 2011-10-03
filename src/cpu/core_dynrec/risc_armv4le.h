@@ -24,8 +24,8 @@
 #include "risc_armv4le-common.h"
 
 // choose your destiny:
-#include "risc_armv4le-thumb-niw.h"
+//#include "risc_armv4le-thumb-niw.h"
 //#include "risc_armv4le-thumb-iw.h"
 //#include "risc_armv4le-thumb.h"
 //#include "risc_armv4le-s3.h"
-//#include "risc_armv4le-o3.h"
+#include "risc_armv4le-o3.h"

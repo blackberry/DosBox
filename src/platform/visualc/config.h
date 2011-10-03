@@ -10,13 +10,13 @@
 #define C_OPENGL 1
 
 /* Define to 1 to enable internal modem support, requires SDL_net */
-#define C_MODEM 1
+//#define C_MODEM 1
 
 /* Define to 1 to enable IPX networking support, requires SDL_net */
-#define C_IPX 1
+//#define C_IPX 1
 
 /* Enable some heavy debugging options */
-#define C_HEAVY_DEBUG 0
+//#define C_HEAVY_DEBUG 0
 
 /* The type of cpu this host has */
 #define C_TARGETCPU X86
@@ -35,7 +35,7 @@
 #define C_FPU 1
 
 /* Define to 1 to use a x86 assembly fpu core */
-#define C_FPU_X86 1
+//#define C_FPU_X86 1
 
 /* Define to 1 to use a unaligned memory access */
 #define C_UNALIGNED_MEMORY 1
@@ -50,7 +50,7 @@
 #define HAVE_DDRAW_H 1
 
 /* Define to 1 if you want serial passthrough support (Win32 only). */
-#define C_DIRECTSERIAL 1
+//#define C_DIRECTSERIAL 1
 
 #define GCC_ATTRIBUTE(x) /* attribute not supported */
 #define GCC_UNLIKELY(x) (x)

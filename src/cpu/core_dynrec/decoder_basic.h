@@ -668,7 +668,9 @@ static void dyn_closeblock(void) {
 	dyn_fill_blocks();
 	cache_block_before_close();
 	cache_closeblock();
+	//fprintf(stderr, "dyn_closeblock calling cache_block_closing(%08x, %d)\n", decode.block->cache.start,decode.block->cache.size);
 	cache_block_closing(decode.block->cache.start,decode.block->cache.size);
+	//fprintf(stderr, "dyn_closeblock done calling cache_block_closing\n");
 }
 
 
