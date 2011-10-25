@@ -62,30 +62,33 @@
 
    <!--  The splash screen that will appear when your application is launching. Should be 1024x600. -->
    <!-- <splashscreen></splashscreen> -->
-   <!-- Request permission to execute native code.  Required for native applications. -->
 
-   <permission system="true">run_native</permission>
+   <action system="true">run_native</action>
+   <action>play_audio</action>
 
-   <!--  The permissions requested by your application. -->
-   <!--  <permission>access_shared</permission> -->
-   <!--  <permission>record_audio</permission> -->
-   <!--  <permission>read_geolocation</permission> -->
-   <!--  <permission>use_camera</permission> -->
-   <!--  <permission>access_internet</permission> -->
-   <!--  <permission>play_audio</permission> -->
-   <!--  <permission>post_notification</permission> -->
-   <!--  <permission>set_audio_volume</permission> -->
-   <!--  <permission>read_device_identifying_information</permission> -->
+   <asset path="${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib/libbps.so" type="Qnx/Elf">lib/libbps.so.1</asset>
+   <asset path="icon.png">icon.png</asset>
 
-   <configuration id="com.qnx.qcc.configuration.exe.debug.1386592274" name="Simulator"/>
-   <configuration id="com.qnx.qcc.configuration.exe.release.141498849" name="Device-Release"/>
+   <configuration id="com.qnx.qcc.configuration.exe.debug.1386592274" name="Simulator">
+      <platformArchitecture>x86</platformArchitecture>
+      <asset path="${workspace_loc:SDL12/Simulator/libSDL12.so}" type="Qnx/Elf">lib/libSDL12.so</asset>
+      <asset path="${workspace_loc:SDL_sound/Simulator/libSDL_sound.so}" type="Qnx/Elf">lib/libSDL_sound.so</asset>
+      <asset path="${workspace_loc:/TouchControlOverlay/Simulator/libTouchControlOverlay.so}" type="Qnx/Elf">lib/libTouchControlOverlay.so</asset>
+      <asset path="Simulator/dosbox" entry="true" type="Qnx/Elf">dosbox</asset>
+   </configuration>
+   <configuration id="com.qnx.qcc.configuration.exe.release.141498849" name="Device-Release">
+      <platformArchitecture>armle-v7</platformArchitecture>
+      <asset path="${workspace_loc:SDL12/Device-Release/libSDL12.so}" type="Qnx/Elf">lib/libSDL12.so</asset>
+      <asset path="${workspace_loc:SDL_sound/Device-Release/libSDL_sound.so}" type="Qnx/Elf">lib/libSDL_sound.so</asset>
+      <asset path="${workspace_loc:/TouchControlOverlay/Device-Release/libTouchControlOverlay.so}" type="Qnx/Elf">lib/libTouchControlOverlay.so</asset>
+      <asset path="Device-Release/dosbox" entry="true" type="Qnx/Elf">dosbox</asset>
+   </configuration>
 
    <configuration id="com.qnx.qcc.configuration.exe.debug.1568320758" name="Device-Debug">
-      <asset path="${workspace_loc:dosbox/icon.png}">icon.png</asset>
+      <platformArchitecture>armle-v7</platformArchitecture>
       <asset path="${workspace_loc:SDL12/Device-Debug/libSDL12.so}" type="Qnx/Elf">lib/libSDL12.so</asset>
       <asset path="${workspace_loc:SDL_sound/Device-Debug/libSDL_sound.so}" type="Qnx/Elf">lib/libSDL_sound.so</asset>
-      <asset path="${workspace_loc:emulate/Device-Debug/libemulate.so}" type="Qnx/Elf">lib/libemulate.so</asset>
-      <asset path="${workspace_loc:bps/src/arm/so.le.v7/libbps.so.1}" type="Qnx/Elf">lib/libbps.so.1</asset>
-      <asset entry="true" path="${workspace_loc:dosbox/Device-Debug/dosbox}">dosbox</asset>
+      <asset path="${workspace_loc:/TouchControlOverlay/Device-Debug/libTouchControlOverlay.so}" type="Qnx/Elf">lib/libTouchControlOverlay.so</asset>
+      <asset path="Device-Debug/dosbox" entry="true" type="Qnx/Elf">dosbox</asset>
    </configuration>
 </qnx>
