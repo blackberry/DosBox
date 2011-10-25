@@ -220,7 +220,6 @@ static Bitu read_p64(Bitu port,Bitu iolen) {
 
 void KEYBOARD_AddKey(KBD_KEYS keytype,bool pressed) {
 	Bit8u ret=0;bool extend=false;
-	fprintf(stderr, "Receiving %d\n", keytype);
 	switch (keytype) {
 	case KBD_esc:ret=1;break;
 	case KBD_1:ret=2;break;
