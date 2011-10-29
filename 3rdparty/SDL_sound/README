@@ -1,0 +1,6 @@
+Build Instructions
+1. Download SDL_sound from http://icculus.org/SDL_sound/downloads/.
+2. Extract the files into the src subdirectory in this folder.
+3. Import the NDK project in this directory into your NDK workspace, it should
+   create a project called SDL_sound.
+4. Build the project.

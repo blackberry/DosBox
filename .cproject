@@ -45,8 +45,9 @@
 									<listOptionValue builtIn="false" value="xml2"/>
 									<listOptionValue builtIn="false" value="bps"/>
 									<listOptionValue builtIn="false" value="pps"/>
-									<listOptionValue builtIn="false" value="vorbis"/>
-									<listOptionValue builtIn="false" value="ogg"/>
+									<listOptionValue builtIn="false" value="vorbisfile_g"/>
+									<listOptionValue builtIn="false" value="vorbis_g"/>
+									<listOptionValue builtIn="false" value="ogg_g"/>
 									<listOptionValue builtIn="false" value="png"/>
 									<listOptionValue builtIn="false" value="z"/>
 								</option>
@@ -54,8 +55,9 @@
 									<listOptionValue builtIn="false" value="&quot;${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL12/Simulator}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay/Simulator}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ogg/Simulator}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/Simulator}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/qnx/ogg/x86/a.g}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/qnx/vorbis/x86/a.g}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/qnx/vorbisfile/x86/a.g}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_sound/Simulator}&quot;"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.512553674" superClass="com.qnx.qcc.inputType.linker">
@@ -125,17 +127,19 @@
 									<listOptionValue builtIn="false" value="xml2"/>
 									<listOptionValue builtIn="false" value="bps"/>
 									<listOptionValue builtIn="false" value="pps"/>
-									<listOptionValue builtIn="false" value="vorbis"/>
-									<listOptionValue builtIn="false" value="ogg"/>
+									<listOptionValue builtIn="false" value="vorbisfile_g"/>
+									<listOptionValue builtIn="false" value="vorbis_g"/>
+									<listOptionValue builtIn="false" value="ogg_g"/>
 									<listOptionValue builtIn="false" value="png"/>
 									<listOptionValue builtIn="false" value="z"/>
 								</option>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.1711541049" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="&quot;${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/qnx/ogg/arm/a.le.v7.g}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/qnx/vorbis/arm/a.le.v7.g}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/qnx/vorbisfile/arm/a.le.v7.g}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL12/Device-Debug}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay/Device-Debug}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ogg/Device-Debug}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/Device-Debug}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_sound/Device-Debug}&quot;"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.1986444679" superClass="com.qnx.qcc.inputType.linker">
@@ -203,6 +207,7 @@
 									<listOptionValue builtIn="false" value="xml2"/>
 									<listOptionValue builtIn="false" value="bps"/>
 									<listOptionValue builtIn="false" value="pps"/>
+									<listOptionValue builtIn="false" value="vorbisfile"/>
 									<listOptionValue builtIn="false" value="vorbis"/>
 									<listOptionValue builtIn="false" value="ogg"/>
 									<listOptionValue builtIn="false" value="png"/>
@@ -210,10 +215,11 @@
 								</option>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.225887353" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="&quot;${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/qnx/ogg/arm/a.le.v7}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/qnx/vorbis/arm/a.le.v7}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/qnx/vorbisfile/arm/a.le.v7}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL12/Device-Release}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay/Device-Release}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ogg/Device-Release}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/Device-Release}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_sound/Device-Release}&quot;"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.1778658052" superClass="com.qnx.qcc.inputType.linker">

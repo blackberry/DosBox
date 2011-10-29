@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>dosbox</name>
+	<name>SDL_sound</name>
 	<comment></comment>
 	<projects>
-		<project>SDL_sound</project>
-		<project>SDL12</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
@@ -29,7 +27,7 @@
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.buildLocation</key>
-					<value>${workspace_loc:/dosbox/Simulator}</value>
+					<value>${workspace_loc:/SDL_sound/Simulator}</value>
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.contents</key>
@@ -60,11 +58,6 @@
 		<buildCommand>
 			<name>org.eclipse.cdt.managedbuilder.core.ScannerConfigBuilder</name>
 			<triggers>full,incremental,</triggers>
-			<arguments>
-			</arguments>
-		</buildCommand>
-		<buildCommand>
-			<name>com.qnx.tools.bbt.xml.core.bbtXMLValidationBuilder</name>
 			<arguments>
 			</arguments>
 		</buildCommand>

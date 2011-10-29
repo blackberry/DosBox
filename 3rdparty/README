@@ -1,0 +1,11 @@
+Building DOSBox dependencies
+There are a number of dependency libraries required. 
+- SDL 1.2 - https://github.com/blackberry/SDL
+- SDL_sound - Follow the instructions in the SDL_sound subdirectory.
+- TouchControlOverlay - https://github.com/blackberry/TouchControlOverlay
+- libogg - https://github.com/blackberry/OggVorbis
+- libvorbis - https://github.com/blackberry/OggVorbis
+
+Notes: 
+The OggVorbis repository is a little strange at the moment. You will have to
+build it using the command line but also import it as a project (called vorbis).
