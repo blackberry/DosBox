@@ -1,3 +1,7 @@
+Note: To build with the BlackBerry NDK 1.0, please follow the instructions in
+the README file in the 3rdparty directory to obtain dependencies, and then
+import the dosbox project into the NDK and build it there.
+
 DOSBox v0.74 Manual (always use the latest version from www.dosbox.com)
 
 
