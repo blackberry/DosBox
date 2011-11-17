@@ -91,4 +91,7 @@
       <asset path="${workspace_loc:/TouchControlOverlay/Device-Debug/libTouchControlOverlay.so}" type="Qnx/Elf">lib/libTouchControlOverlay.so</asset>
       <asset path="Device-Debug/dosbox" entry="true" type="Qnx/Elf">dosbox</asset>
    </configuration>
+   
+   <!-- Ensure that shared libraries in the package are found at run-time. -->
+   <env var="LD_LIBRARY_PATH" value="app/native/lib"/>
 </qnx>
