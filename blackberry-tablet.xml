@@ -65,6 +65,7 @@
 
    <action system="true">run_native</action>
    <action>play_audio</action>
+   <action>access_shared</action>
 
    <asset path="${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib/libbps.so" type="Qnx/Elf">lib/libbps.so.1</asset>
    <asset path="icon.png">icon.png</asset>
