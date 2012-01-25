@@ -23,8 +23,8 @@
 								<option id="com.qnx.qcc.option.compile.debug.783784119" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.571341058" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_sound/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL12/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/3rdparty/prebuilt/SDL_sound/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/3rdparty/prebuilt/SDL12/include}&quot;"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.defines.410297354" name="Defines (-D)" superClass="com.qnx.qcc.option.compiler.defines" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="__QNXNTO__"/>
@@ -53,12 +53,10 @@
 								</option>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.899235181" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="&quot;${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL12/Simulator}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay/Simulator}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/qnx/ogg/x86/a.g}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/qnx/vorbis/x86/a.g}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/qnx/vorbisfile/x86/a.g}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_sound/Simulator}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/3rdparty/prebuilt/OggVorbis/Simulator}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/3rdparty/prebuilt/SDL12/Simulator}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/3rdparty/prebuilt/TouchControlOverlay/Simulator}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/3rdparty/prebuilt/SDL_sound/Simulator}&quot;"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.512553674" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -103,8 +101,8 @@
 								<option id="com.qnx.qcc.option.compile.debug.227072980" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.175730228" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_sound/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL12/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/3rdparty/prebuilt/SDL_sound/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/3rdparty/prebuilt/SDL12/include}&quot;"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.defines.608159851" name="Defines (-D)" superClass="com.qnx.qcc.option.compiler.defines" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="__QNXNTO__"/>
@@ -135,12 +133,10 @@
 								</option>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.1711541049" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="&quot;${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/qnx/ogg/arm/a.le.v7.g}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/qnx/vorbis/arm/a.le.v7.g}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/qnx/vorbisfile/arm/a.le.v7.g}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL12/Device-Debug}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay/Device-Debug}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_sound/Device-Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/3rdparty/prebuilt/OggVorbis/Device-Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/3rdparty/prebuilt/SDL12/Device-Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/3rdparty/prebuilt/TouchControlOverlay/Device-Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/3rdparty/prebuilt/SDL_sound/Device-Debug}&quot;"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.1986444679" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -187,8 +183,8 @@
 								<option id="com.qnx.qcc.option.compiler.optlevel.1835056590" name="Optimization Level" superClass="com.qnx.qcc.option.compiler.optlevel" value="com.qnx.qcc.option.compiler.optlevel.2" valueType="enumerated"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.905880021" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_sound/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL12/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/3rdparty/prebuilt/SDL_sound/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/3rdparty/prebuilt/SDL12/include}&quot;"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.defines.1790342869" name="Defines (-D)" superClass="com.qnx.qcc.option.compiler.defines" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="__QNXNTO__"/>
@@ -215,12 +211,10 @@
 								</option>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.225887353" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="&quot;${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/qnx/ogg/arm/a.le.v7}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/qnx/vorbis/arm/a.le.v7}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/qnx/vorbisfile/arm/a.le.v7}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL12/Device-Release}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay/Device-Release}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_sound/Device-Release}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/3rdparty/prebuilt/OggVorbis/Device-Release}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/3rdparty/prebuilt/SDL12/Device-Release}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/3rdparty/prebuilt/TouchControlOverlay/Device-Release}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/3rdparty/prebuilt/SDL_sound/Device-Release}&quot;"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.1778658052" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>

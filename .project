@@ -3,8 +3,6 @@
 	<name>dosbox</name>
 	<comment></comment>
 	<projects>
-		<project>SDL_sound</project>
-		<project>SDL12</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
