@@ -1,3 +1,10 @@
+Prebuilt binaries are located in the prebuilt directory, to save the effort
+of rebuilding them. However, if you want to make changes or use different
+versions of the libraries, here are the instructions to do so.
+Once they are built, you will either need to reconfigure the include and
+library paths to point to your versions, or copy them on top of the prebuilt
+versions here.
+
 Building DOSBox dependencies
 There are a number of dependency libraries required. 
 - SDL 1.2 - https://github.com/blackberry/SDL
