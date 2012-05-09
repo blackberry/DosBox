@@ -35,7 +35,7 @@
 
 #define EMM_PAGEFRAME	0xE000
 #define EMM_PAGEFRAME4K	((EMM_PAGEFRAME*16)/4096)
-#define	EMM_MAX_HANDLES	200				/* 255 Max */
+#define	EMM_MAX_HANDLES	255				/* 255 Max */
 #define EMM_PAGE_SIZE	(16*1024U)
 #define EMM_MAX_PAGES	(32 * 1024 / 16 )
 #define EMM_MAX_PHYS	4				/* 4 16kb pages in pageframe */
