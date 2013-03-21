@@ -103,6 +103,9 @@ static Real64 FPU_FLD80(PhysPt addr) {
 	Bit64s exp64final = ((exp64 >0)?blah:-blah) +BIAS64;
 
 	Bit64s mant64 = (test.eind.ll >> 11) & LONGTYPE(0xfffffffffffff);
+	if ((test.eind.ll & 0x7ff) > 0x400) {
+		mant64 += 1;
+	}
 	Bit64s sign = (test.begin&0x8000)?1:0;
 	FPU_Reg result;
 	result.ll = (sign <<63)|(exp64final << 52)| mant64;
